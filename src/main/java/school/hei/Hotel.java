@@ -28,8 +28,4 @@ public class Hotel extends Endroit {
     public void addReview(Avis avis){
         avisDesClients.add(avis);
     }
-
-
-
-
 }

@@ -14,6 +14,8 @@ import java.util.*;
 
 public class Carte {
 
+    private String nom;
+
     private List<Parc> plusieursParc;
 
     public void getAllReviews(){
@@ -43,5 +45,4 @@ public class Carte {
             }
         }
     }
-
 }

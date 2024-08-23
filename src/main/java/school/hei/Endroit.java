@@ -11,6 +11,7 @@ import lombok.ToString;
 @EqualsAndHashCode
 
 public class Endroit {
+
     private String nom;
 
     private double longitude;

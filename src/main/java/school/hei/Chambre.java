@@ -11,6 +11,7 @@ import lombok.ToString;
 @AllArgsConstructor
 
 public class Chambre {
+
     private String numero;
 
     private double tarif;

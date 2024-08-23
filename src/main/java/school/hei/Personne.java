@@ -13,6 +13,7 @@ import java.util.*;
 @ToString
 
 public class Personne {
+
     private int nom;
 
     private String contact;
