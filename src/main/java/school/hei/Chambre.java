@@ -10,7 +10,9 @@ import lombok.ToString;
 @EqualsAndHashCode
 @AllArgsConstructor
 public class Chambre {
-    private int numero;
+    private String numero;
 
     private double tarif;
+
+    private String nomHotel;
 }
