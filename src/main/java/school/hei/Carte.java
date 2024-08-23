@@ -24,8 +24,6 @@ public class Carte {
         }
     }
 
-
-
     public void getAllPlacesInside(double latitudeMaximal,double latitudeMinimal,double longitudeMinimale,double longitudeMaximal){
         List<Endroit> listeDesEndroits = new ArrayList<>();
 

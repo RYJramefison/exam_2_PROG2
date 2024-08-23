@@ -9,6 +9,7 @@ import lombok.ToString;
 @Getter
 @EqualsAndHashCode
 @AllArgsConstructor
+
 public class Chambre {
     private String numero;
 

@@ -9,6 +9,7 @@ import lombok.ToString;
 @Getter
 @AllArgsConstructor
 @EqualsAndHashCode
+
 public class Endroit {
     private String nom;
 

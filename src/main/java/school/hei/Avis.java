@@ -11,6 +11,7 @@ import java.util.List;
 @AllArgsConstructor
 @EqualsAndHashCode
 @ToString
+
 public class Avis {
 
     private Personne personne;

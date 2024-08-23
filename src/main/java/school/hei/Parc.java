@@ -14,9 +14,8 @@ public class Parc extends Endroit{
 
     private List<Hotel> desHotels;
 
-    public Parc(String nom, double longitude, double latitude, String description) {
+    public Parc(String nom, double longitude, double latitude, String description, List<Hotel> desHotels) {
         super(nom, longitude, latitude, description);
+        this.desHotels = desHotels;
     }
-
-
 }
