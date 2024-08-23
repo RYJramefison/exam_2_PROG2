@@ -13,7 +13,6 @@ import java.util.Locale;
 @AllArgsConstructor
 @EqualsAndHashCode
 
-
 public class Avis {
 
     private Personne personne;
