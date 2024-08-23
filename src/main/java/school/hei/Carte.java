@@ -24,27 +24,7 @@ public class Carte {
         }
     }
 
-    public List<Hotel> findBestHotel(){
-        Map<Hotel, Integer> meilleurHotel = new HashMap<>();
 
-        for (Parc parc : plusieursParc) {
-            for (Hotel hotel : parc.getDesHotels()) {
-                meilleurHotel.merge(hotel, 1, Integer::sum);
-            }
-        }
-
-        List<Hotel> Top1Hotel = meilleurHotel.entrySet().stream().sorted((Comparator<? super Map.Entry<Hotel, Integer>>) Map.Entry.comparingByValue().reversed())
-                .limit(1)
-                .map(Map.Entry::getKey)
-                .toList();
-
-        Hotel top1 = null;
-        for (Hotel hotel : Top1Hotel) {
-            top1 = hotel;
-        }
-
-        return (List<Hotel>) top1;
-    }
 
     public void getAllPlacesInside(double latitudeMaximal,double latitudeMinimal,double longitudeMinimale,double longitudeMaximal){
         List<Endroit> listeDesEndroits = new ArrayList<>();
