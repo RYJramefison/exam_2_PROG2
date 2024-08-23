@@ -5,12 +5,14 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
 
+import java.time.LocalDate;
 import java.util.List;
+import java.util.Locale;
 
 @Getter
 @AllArgsConstructor
 @EqualsAndHashCode
-@ToString
+
 
 public class Avis {
 
@@ -18,7 +20,20 @@ public class Avis {
 
     private String nameParcOuHotelOuNumeroChambre;
 
-    private int note;
+    private int score;
 
     private String commentaire;
+
+    private LocalDate date;
+
+    @Override
+    public String toString() {
+        return "Avis {" +
+                "personne: " + personne +
+                ", nameParcOuHotelOuNumeroChambre: '" + nameParcOuHotelOuNumeroChambre + '\'' +
+                ", score: " + score +"sur 5"+
+                ", commentaire: '" + commentaire + '\'' +
+                ", date= " + date +
+                '}';
+    }
 }
